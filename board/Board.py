@@ -50,12 +50,3 @@ class Board:
             "Rook": Rook(color),
         }.get(unit_type, Pawn(color))
         self.set_unit(pawn_position, chosen_unit)
-
-    def show_board(self):
-        for i in range(8):
-            for j in range(8):
-                print(f" | {self.unit[i][j]}", end="")
-                if j == 7:
-                    print(f" | {8 - i}")
-            print("-" * 42)
-        print("   a    b    c    d    e    f    g    h")

@@ -12,7 +12,6 @@ class Bishop(Unit):
 
         for i in [-1, 1]:
             j = 1
-            # Diagonal \
             while True:
                 try:
                     move_to_check = [move_from[0] + i * j, move_from[1] + i * j]
@@ -28,7 +27,6 @@ class Bishop(Unit):
                     break
 
             j = 1
-            # Diagonal /
             while True:
                 try:
                     move_to_check = [move_from[0] - i * j, move_from[1] + i * j]
