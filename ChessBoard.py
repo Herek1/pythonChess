@@ -41,7 +41,7 @@ class ChessBoard:
                     self.canvas.create_text(
                         (x1 + x2) // 2, (y1 + y2) // 2,
                         text=unit.look, font=("Arial", 24),
-                        fill="black" if unit.color else "white"
+                        fill="white" if unit.color else "black"
                     )
 
         self.canvas.bind("<Button-1>", self.handle_click)
